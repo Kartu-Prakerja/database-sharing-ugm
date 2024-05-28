@@ -269,6 +269,7 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 95vh;
   position: relative;
   padding-top: 4rem;
+  background-color: #083D62;
   background-repeat: repeat;
   background-position: center center;
 }
@@ -329,7 +330,7 @@ h1, h2, h3, h4, h5, h6 {
 .video-wrapper {
   position: relative;
   width: 100%;
-  min-height: calc(100vh - 64px);
+  height: calc(100vh - 64px);
   overflow: hidden;
 }
 
@@ -352,8 +353,9 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
 }
 
-.content-light * {
+.text-light {
   color: var(--b50) !important;
+  color: #F4F8FC;
 }
 
 .text-gradient-hero {
@@ -365,6 +367,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-about-prakerja {
   background-color: #083D62;
+  position: relative;
+  z-index: 5;
+}
+.section-about-prakerja .row {
+  -webkit-transform: translateY(-96px);
+          transform: translateY(-96px);
+  color: var(--b50) !important;
+}
+
+.about-prakerja-text {
+  -webkit-column-count: 3;
+     -moz-column-count: 3;
+          column-count: 3;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
 }
 
 .section-forms:before {
