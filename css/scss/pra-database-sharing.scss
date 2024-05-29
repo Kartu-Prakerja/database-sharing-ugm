@@ -74,7 +74,10 @@
         bottom:0;
     }
 }
-
+.hero-text-shadow{
+    // text-shadow: 0px 4px 4px rgba(17, 46, 80, 0.25);
+    filter: drop-shadow(0px 4px 4px rgba(17, 46, 80, 0.25));
+}
 
 .video-wrapper {
     position: absolute!important;
