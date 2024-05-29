@@ -32,15 +32,32 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/pra-database-sharing.css">
   </head>
-  <body>
+  <body class="demo-overview loading">
     <header class="pdt-header">
-      <div class="container px-3 px-md-0">
-        <div class="d-flex justify-content-between align-items-center"><a href="https://www.prakerja.go.id/"><img loading="lazy" src="img/logo-prakerja-white.svg" alt="Logo Prakerja"></a>
-          <div class="d-flex">
-            <div class="web-lang d-flex align-items-center"><a class="d-flex align-items-center me-2 nav-link" href="https://laporan-2022.prakerja.go.id?utm_source=laporan_2023&amp;utm_campaign=landing_page&amp;utm_medium=nav_links">Menu 1</a>
-              <!-- <span class="separator">|</span>--><a class="d-flex align-items-center ms-1" href="/en">EN <span class="ms-1"><img src="img/flag-en.webp" alt=""></span></a>
-            </div>
-          </div>
+      <div class="container-md px-4 px-md-0">
+        <div class="d-flex justify-content-between align-items-center position-relative">
+          <div class="d-flex justify-content-between align-items-center col-12 col-lg-auto"><a class="main-logo" href="https://www.prakerja.go.id/"><img loading="lazy" src="img/logo-prakerja-x-febugm.png" alt="Logo Prakerja x FEB UGM"></a></div>
+          <ul class="d-flex align-items-center navbar-custom">
+            <li class="nav-item md-show">
+              <div class="menu burger-menu" data-menu="13">
+                <div class="icon"></div>
+              </div>
+            </li>
+            <li class="nav-item md-hide"><a class="nav-link nav-link-active" href="index.html">Beranda</a></li>
+            <li class="nav-item md-hide"><a class="nav-link" href="pelatihan/index.html">Database</a></li>
+            <li class="nav-item md-hide"><a class="nav-link" href="tanyajawab/index.html">Tanya Jawab</a></li>
+            <li class="nav-item md-hide"><a class="nav-link" href="tanyajawab/index.html">Publikasi</a></li>
+            <li class="nav-item md-hide supper-hidden" id="profile">
+              <div class="web-lang d-flex align-items-center">
+                <!-- <span class="separator">|</span>--><a class="d-flex align-items-center ms-1" href="/en">ID <span class="ms-1"><img src="img/flag-id.webp" alt=""></span></a>
+              </div>
+              <ul>
+                <li><a href="/profil/index.html">Indonesia</a></li>
+                <li><a href="/profil/index.html#active-course-container">
+                     English</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -56,13 +73,14 @@
         </div>
         <div class="container py-md-5 pt-5 px-4 px-md-0">
           <div class="row justify-content-start">
-            <div class="col-lg-6 p-0">
+            <div class="col-lg-6">
               <div class="d-flex justify-content-center">
                 <div>
-                  <h1 class="display-1 text-light"><span class="text-gradient-hero">Database</span>&nbsp; Publik </h1>
+                  <h1 class="hidden">Database Publik</h1>
+                  <div class="display-1 text-light content__title mb-3"><span class="content__title__inner text-gradient-hero" id="rev-1">Database</span><br><span class="content__title__inner" id="rev-2">Publik </span></div>
                   <h3 class="text-light">Program Prakerja 2020-2022</h3>
                   <p class="text-light">Lorem ipsum PPE self care staycation. Remote doomscroll frontline workers unprecedented shortage walktail we can't hear you.. Hybrid storm Area 51 Tiger King spread. Hurricane Greek alphabet election Quibi K-shaped recovery.</p>
-                  <button class="btn btn-outline-warning"> <i class="bi bi-play-circle-fill me-2"></i>Putar Video</button>
+                  <button class="btn btn-orange"><i class="bi bi-play-circle-fill me-2"></i>Putar Video</button>
                 </div>
               </div>
             </div>
@@ -73,12 +91,30 @@
         <div class="container py-5 px-4 px-md-0">
           <div class="row justify-content-center">
             <div class="col-12">
-              <h3 class="text-light mb-3">Tentang Prakerja</h3>
-              <div class="about-prakerja-text">
-                <p class="text-light">Kartu Prakerja adalah program inisiatif Presiden Joko Widodo pada tahun 2019 untuk meningkatkan kompetensi, produktivitas, daya saing, dan kemampuan kewirausahaan angkatan kerja Indonesia. Selama tahun 2020-2022, Prakerja menerapkan skema semi-bansos untuk merespon dampak Covid-19 dan menjadi bagian dari Program Pemulihan Ekonomi Nasional. Prakerja mengemban misi ganda dalam menjaga daya beli masyarakat, sekaligus sebagai program skill development angkatan kerja Indonesia. </p>
-                <p class="text-light">Pada periode 2020-2022, terdapat 398 lembaga pelatihan yang tergabung dalam ekosistem Prakerja dan menawarkan lebih dari 6.900 pelatihan.</p>
-                <p class="text-light">Dalam implementasinya, Prakerja menerapkan sistem end-to-end digital untuk melayani masyarakat dengan cepat, dalam skala luas, dan tanpa perantara. Hal ini berlaku dalam proses pendaftaran, proses pelatihan, hingga penyaluran insentif pascapelatihan</p><a href="#">Pelajari Selengkapnya </a>
+              <h3 class="content__title text-light mb-3"><span class="content__title__inner" id="rev-4">Tentang Prakerja</span></h3>
+            </div>
+            <div class="col-8">
+              <div class="row">
+                <div class="col-6">
+                  <div class="content__title">
+                    <p class="content__title__inner" id="rev-5">
+                       Kartu Prakerja adalah program inisiatif Presiden Joko Widodo pada tahun 2019 untuk meningkatkan kompetensi, produktivitas, daya saing, dan kemampuan kewirausahaan angkatan kerja Indonesia.
+                      Selama tahun 2020-2022, Prakerja menerapkan skema semi-bansos untuk merespon dampak Covid-19 dan menjadi bagian dari Program Pemulihan Ekonomi Nasional. Prakerja mengemban misi ganda dalam menjaga daya beli masyarakat, sekaligus sebagai program skill development angkatan kerja Indonesia.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="content__title">
+                    <p class="content__title__inner" id="rev-6">
+                       Pada periode 2020-2022, terdapat 398 lembaga pelatihan yang tergabung dalam ekosistem Prakerja dan menawarkan lebih dari 6.900 pelatihan. Dalam implementasinya, 
+                      Prakerja menerapkan sistem end-to-end digital untuk melayani masyarakat dengan cepat, dalam skala luas, dan tanpa perantara. Hal ini berlaku dalam proses pendaftaran, proses pelatihan, hingga penyaluran insentif pascapelatihan
+                    </p>
+                  </div>
+                </div>
               </div>
+            </div>
+            <div class="col-4"> 
+              <div class="content__image-wrap" id="rev-3"><img class="content__image w-100" src="img/img-joko-widodo-temu-raya.webp" alt="Some image"><br><a class="text-light" href="#">Pelajari Selengkapnya </a></div>
             </div>
           </div>
         </div>
@@ -86,7 +122,36 @@
       <section>
         <div class="container py-5 px-4 px-md-0">
           <div class="row justify-content-center">
-            <h3>Number number number</h3>
+            <div class="col-6">
+              <h3 class="content__title"> <span class="content__title__inner" id="rev-5">Statistik Penerima Manfaat</span></h3>
+              <p>Data tahun 2020 hingga 2022 dengan skema Semi Bansos Lorem ipsum PPE self care staycation. Remote doomscroll frontline workers unprecedented shortage walktail we can't hear you.. Hybrid storm Area 51 Tiger King spread.</p>
+            </div>
+          </div>
+          <div class="row"> 
+            <div class="col-4"> 
+              <h4>16,4 Juta</h4>
+              <p>Penerima efektif</p>
+            </div>
+            <div class="col-4"> 
+              <h4>86%</h4>
+              <p>Belum pernah mengikuti pelatihan</p>
+            </div>
+            <div class="col-4"> 
+              <h4>51%</h4>
+              <p>Perempuan</p>
+            </div>
+            <div class="col-4"> 
+              <h4>64%</h4>
+              <p>Berpendidikan SMA ke atas</p>
+            </div>
+            <div class="col-4"> 
+              <h4>3%</h4>
+              <p>Penyandang disabilitas</p>
+            </div>
+            <div class="col-4"> 
+              <h4>64%</h4>
+              <p>Tinggal di perdesaan</p>
+            </div>
           </div>
         </div>
       </section>
@@ -132,5 +197,9 @@
   </body>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="/js/anime.min.js"></script>
+  <script src="/js/scrollMonitor.js"></script>
+  <script src="/js/main.js"></script>
   <script src="/js/function.js"></script>
+  <script src="/js/reveal_home.js"></script>
 </html>

@@ -9,7 +9,7 @@
 doctype html
 html(lang="id" page-class="home")
     include pug/includes/html_head.pug
-    body
+    body.demo-overview.loading
         include pug/includes/analytics_no_script.pug
         include pug/includes/header_id.pug
 
@@ -25,3 +25,5 @@ html(lang="id" page-class="home")
 
         include pug/includes/footer_id.pug
     include pug/includes/html_foot.pug
+    script(src="/js/reveal_home.js")
+    

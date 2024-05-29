@@ -20,4 +20,20 @@ $(document).ready(function(){
         });
 
     });
+
+    // Menu toggle
+    $('.menu').click (function(){
+        $(this).toggleClass('open');
+        $('.navbar-custom').toggleClass('m-menu');
+        $('body').toggleClass('freeze');
+      });
+
+      $(".navbar-custom").on("click", ".nav-link", function(event){
+        $('.menu').removeClass('open');
+        $('.navbar-custom').removeClass('m-menu');
+        $('body').removeClass('freeze');
+    });
+    
+
 });
+
