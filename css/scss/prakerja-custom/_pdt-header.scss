@@ -54,6 +54,7 @@ ul.navbar-custom{
         text-decoration: none;
         display: block;
         text-align: center;
+        
       }
     }
   }
@@ -64,6 +65,8 @@ ul.navbar-custom{
     padding: .5rem .75rem;
     border-radius: .5rem;
     color: var(--o100);
+    letter-spacing: 1px;
+    font-size: calc(14/16) + rem;
     &:hover{
       // background-color: rgba(#2A72C7, .05);
     }

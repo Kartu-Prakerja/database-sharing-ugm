@@ -1,43 +1,198 @@
 section
-    .container.py-5.px-4.px-md-0
+    .container.py-5
         .row.justify-content-center
-            .col-6
-                h3.content__title 
-                    span#rev-5.content__title__inner Statistik Penerima Manfaat
+            .col-12.col-lg-6.text-center
+                h3
+                    span Statistik Penerima Manfaat
                 p Data tahun 2020 hingga 2022 dengan skema Semi Bansos Lorem ipsum PPE self care staycation. Remote doomscroll frontline workers unprecedented shortage walktail we can't hear you.. Hybrid storm Area 51 Tiger King spread.
+
         .row 
-            .col-4 
-                .graphic 
-                    .bi.bi-people-fill
-                h4 16,4 Juta
-                p Penerima efektif
+            .d-flex.justify-content-center.mt-3
+                ul#pills-tab.nav.nav-pills.capsule-wrapper.rounded-pill.p-0.mb-3(role='tablist')
+                    li.nav-item(role='statistic')
+                        button#pills-semua-tab.btn.btn-tab-custom.rounded-pill.active(data-bs-toggle='pill' data-bs-target='#pills-semua' type='button' role='tab' aria-controls='pills-semua' aria-selected='true') Semua
+                    li.nav-item(role='statistic')
+                        button#pills-2022-tab.btn.btn-tab-custom.rounded-pill(data-bs-toggle='pill' data-bs-target='#pills-2022' type='button' role='tab' aria-controls='pills-2022' aria-selected='false') 2022
+                    li.nav-item(role='statistic')
+                        button#pills-2021-tab.btn.btn-tab-custom.rounded-pill(data-bs-toggle='pill' data-bs-target='#pills-2021' type='button' role='tab' aria-controls='pills-conta2021ct' aria-selected='false') 2021
+                    li.nav-item(role='statistic')
+                        button#pills-2020-tab.btn.btn-tab-custom.rounded-pill(data-bs-toggle='pill' data-bs-target='#pills-2020' type='button' role='tab' aria-controls='pills-2020' aria-selected='false') 2020
+            #pills-tabContent.tab-content
+                #pills-semua.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='pills-semua-tab' tabindex='0')
+                    .row.py-4
+                        .col-6.col-lg-4.text-center.mb-5
+                            .graphic.mb-3 
+                                span.stat-circle
+                                i.bi.bi-people-fill
+                            h4 16,4 Juta
+                            p Penerima efektif
 
-            .col-4 
-                .graphic 
-                    .bi.bi-award-fill
-                h4 86%
-                p Belum pernah mengikuti pelatihan
+                        .col-6.col-lg-4.text-center.mb-5
+                            .graphic.mb-3 
+                                span.stat-circle
+                                i.bi.bi-award-fill
+                            h4 86%
+                            p Belum pernah mengikuti pelatihan
 
-            .col-4 
-                .graphic 
-                    .bi.bi-gender-female
-                h4 51%
-                p Perempuan
+                        .col-6.col-lg-4.text-center.mb-5
+                            .graphic.mb-3 
+                                span.stat-circle
+                                i.bi.bi-gender-female
+                            h4 51%
+                            p Perempuan
 
-            .col-4 
-                .graphic 
-                    .bi.bi-mortarboard-fill
-                h4 64%
-                p Berpendidikan SMA ke atas
-            
-            .col-4 
-                .graphic 
-                    .bi.bi-person-wheelchair
-                h4 3%
-                p Penyandang disabilitas
-            
-            .col-4 
-                .graphic 
-                    .bi.bi-houses-fill
-                h4 64%
-                p Tinggal di perdesaan
+                        .col-6.col-lg-4.text-center.mb-5 
+                            .graphic.mb-3 
+                                span.stat-circle
+                                i.bi.bi-mortarboard-fill
+                            h4 64%
+                            p Berpendidikan SMA ke atas
+                        
+                        .col-6.col-lg-4.text-center.mb-5 
+                            .graphic.mb-3 
+                                span.stat-circle
+                                i.bi.bi-person-wheelchair
+                            h4 3%
+                            p Penyandang disabilitas
+                        
+                        .col-6.col-lg-4.text-center.mb-5 
+                            .graphic.mb-3 
+                                span.stat-circle
+                                i.bi.bi-houses-fill
+                            h4 64%
+                            p Tinggal di perdesaan
+
+                #pills-2022.tab-pane.fade(role='tabpanel' aria-labelledby='pills-2022-tab' tabindex='0')
+                    .row.py-4
+                        .col-6.col-lg-4.text-center.mb-5
+                            .graphic.mb-3 
+                                span.stat-circle
+                                i.bi.bi-people-fill
+                            h4 4,9 Juta
+                            p Penerima efektif
+
+                        .col-6.col-lg-4.text-center.mb-5
+                            .graphic.mb-3 
+                                span.stat-circle
+                                i.bi.bi-award-fill
+                            h4 87%
+                            p Belum pernah mengikuti pelatihan
+
+                        .col-6.col-lg-4.text-center.mb-5
+                            .graphic.mb-3 
+                                span.stat-circle
+                                i.bi.bi-gender-female
+                            h4 55%
+                            p Perempuan
+
+                        .col-6.col-lg-4.text-center.mb-5 
+                            .graphic.mb-3 
+                                span.stat-circle
+                                i.bi.bi-mortarboard-fill
+                            h4 46%
+                            p Berpendidikan SMA ke atas
+                        
+                        .col-6.col-lg-4.text-center.mb-5 
+                            .graphic.mb-3 
+                                span.stat-circle
+                                i.bi.bi-person-wheelchair
+                            h4 3%
+                            p Penyandang disabilitas
+                        
+                        .col-6.col-lg-4.text-center.mb-5 
+                            .graphic.mb-3 
+                                span.stat-circle
+                                i.bi.bi-houses-fill
+                            h4 79%
+                            p Tinggal di perdesaan
+
+                #pills-2021.tab-pane.fade(role='tabpanel' aria-labelledby='pills-2021-tab' tabindex='0')
+                    .row.py-4
+                        .col-6.col-lg-4.text-center.mb-5
+                            .graphic.mb-3 
+                                span.stat-circle
+                                i.bi.bi-people-fill
+                            h4 5,9 Juta
+                            p Penerima efektif
+
+                        .col-6.col-lg-4.text-center.mb-5
+                            .graphic.mb-3 
+                                span.stat-circle
+                                i.bi.bi-award-fill
+                            h4 87%
+                            p Belum pernah mengikuti pelatihan
+
+                        .col-6.col-lg-4.text-center.mb-5
+                            .graphic.mb-3 
+                                span.stat-circle
+                                i.bi.bi-gender-female
+                            h4 52%
+                            p Perempuan
+
+                        .col-6.col-lg-4.text-center.mb-5 
+                            .graphic.mb-3 
+                                span.stat-circle
+                                i.bi.bi-mortarboard-fill
+                            h4 64%
+                            p Berpendidikan SMA ke atas
+                        
+                        .col-6.col-lg-4.text-center.mb-5 
+                            .graphic.mb-3 
+                                span.stat-circle
+                                i.bi.bi-person-wheelchair
+                            h4 2%
+                            p Penyandang disabilitas
+                        
+                        .col-6.col-lg-4.text-center.mb-5 
+                            .graphic.mb-3 
+                                span.stat-circle
+                                i.bi.bi-houses-fill
+                            h4 62%
+                            p Tinggal di perdesaan
+
+                #pills-2020.tab-pane.fade(role='tabpanel' aria-labelledby='pills-dis2020abled-tab' tabindex='0')
+                    .row.py-4
+                        .col-6.col-lg-4.text-center.mb-5
+                            .graphic.mb-3 
+                                span.stat-circle
+                                i.bi.bi-people-fill
+                            h4 5,5 Juta
+                            p Penerima efektif
+
+                        .col-6.col-lg-4.text-center.mb-5
+                            .graphic.mb-3 
+                                span.stat-circle
+                                i.bi.bi-award-fill
+                            h4 84%
+                            p Belum pernah mengikuti pelatihan
+
+                        .col-6.col-lg-4.text-center.mb-5
+                            .graphic.mb-3 
+                                span.stat-circle
+                                i.bi.bi-gender-female
+                            h4 55%
+                            p Perempuan
+
+                        .col-6.col-lg-4.text-center.mb-5 
+                            .graphic.mb-3 
+                                span.stat-circle
+                                i.bi.bi-mortarboard-fill
+                            h4 80%
+                            p Berpendidikan SMA ke atas
+                        
+                        .col-6.col-lg-4.text-center.mb-5 
+                            .graphic.mb-3 
+                                span.stat-circle
+                                i.bi.bi-person-wheelchair
+                            h4 5%
+                            p Penyandang disabilitas
+                        
+                        .col-6.col-lg-4.text-center.mb-5 
+                            .graphic.mb-3 
+                                span.stat-circle
+                                i.bi.bi-houses-fill
+                            h4 47%
+                            p Tinggal di perdesaan
+
+
+        

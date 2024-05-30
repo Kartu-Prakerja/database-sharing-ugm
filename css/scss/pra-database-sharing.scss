@@ -116,8 +116,15 @@
     height: 100%;
     position: absolute;
     z-index: 2;
-    background-image: url('../img/pattern-circle.svg');
-    background-repeat: repeat;
+    &:before{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 22;
+        content: '';
+        background-image: url('../img/pattern-circle.svg');
+        background-repeat: repeat;
+    }
   }
   
   /* Video  */
@@ -125,7 +132,7 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    // height: calc(100vh - 64px);
+    height: calc(100vh - 32px);
     // min-height: 177.77777778vw; apply on mobile
     overflow: hidden;
   }
@@ -159,6 +166,11 @@
     -webkit-text-fill-color: transparent;
 }
 
+.video-youtube-embed{
+    width: 100%;
+    min-height: 360px;
+}
+
 // .section-hero
 
 
@@ -179,6 +191,56 @@
     column-count: 2;
     column-gap:24px
 }
+
+// Statistic
+.capsule-wrapper{
+    border: solid 1px var(--border-default);
+    width: auto;
+    .nav.nav-pills button.nav-link:not(.active) {
+        background: none!important;
+        // color: var(--text-default);
+    }
+}
+
+.graphic{
+    // display: inline-block;
+    // height: 64px;
+    width: 100%;
+    // outline: solid 1px red;
+    position: relative;
+    // background-color: yellow;
+    span{
+        display: block;
+        width: 4rem;
+        height: 4rem;
+        background-color: var(--o200);
+        // position: absolute;
+        z-index: -1;
+        border-radius: 32px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    i{
+        width: 3.5rem;
+        height: 3.5rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: -3rem;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 2;
+        color: var(--primary);
+        font-size: 3.5rem;
+        line-height: 4rem;
+        // outline: solid 1px red;
+    }
+}
+
+
+
 .section-forms{
     &:before{
         display: block;
@@ -440,11 +502,12 @@
     bottom:10%;
 }
 
+.section-footer{
+    background-color: $ugm-blue;
+}
 
 .section-footer .top-wrapper{
-    background-color: $ugm-blue;
     border-top:solid 1px var(--border-default);
-    border-bottom:solid 1px var(--border-default);
 }
 
 .list-footer-menu{
@@ -620,7 +683,7 @@
       border-radius: 32px;
       overflow: hidden;
       border: solid 1px white;
-      background-color: var(--o600);
+      background-color: var(--b300);
       img{
         width: 100%;
         height: 100%;
@@ -628,7 +691,7 @@
       }
     }
     i{
-      color: var(--b300);
+      color: var(--o400);
     }
   }
 
@@ -764,4 +827,4 @@
     }
  }
 
-
+ @import "prakerja-custom/owl.carousel";

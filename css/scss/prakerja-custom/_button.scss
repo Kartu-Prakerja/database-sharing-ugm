@@ -273,3 +273,19 @@
     --bs-btn-disabled-border-color: none;
     --bs-btn-active-border-color: transparent;
   }
+
+  // custom for statistic section
+  .btn-tab-custom{
+    background-color: none;
+    color: var(--text-default);
+    &.active{
+        color: var(--o500);
+        background-color: var(--o100);
+        border: solid transparent 1px;
+    }
+    &:focus{
+        color: var(--o500)!important;
+        background-color: var(--o100)!important;
+        border: solid transparent 1px!important;
+    }
+  }

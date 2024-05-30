@@ -33,6 +33,25 @@ $(document).ready(function(){
         $('.navbar-custom').removeClass('m-menu');
         $('body').removeClass('freeze');
     });
+
+    $('.testimony-carousel').owlCarousel({
+        loop:true,
+        // margin:24,
+        autoplay: true,
+        center: true,
+        dots: true,
+        lazyLoad:true,
+        responsive:{
+            1000:{
+                items:3,
+                margin: 0
+            },
+            0:{
+                items:1,
+                margin: 0
+            }
+        }
+    });
     
 
 });
