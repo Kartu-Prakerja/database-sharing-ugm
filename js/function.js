@@ -52,6 +52,29 @@ $(document).ready(function(){
             }
         }
     });
+
+    $('.survey-org-carousel').owlCarousel({
+        loop:true,
+        // margin:24,
+        autoplay: true,
+        center: true,
+        dots: false,
+        lazyLoad:true,
+        responsive:{
+            1000:{
+                items:4.5,
+                margin: 16
+            },
+            756:{
+                items:3.5,
+                margin: 12
+            },
+            0:{
+                items:2.5,
+                margin: 8
+            }
+        }
+    });
     
 
 });

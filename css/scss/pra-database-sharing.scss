@@ -7,7 +7,9 @@
     --flag-size: 20px;
   }
 
-
+.outline{
+    outline: solid 1px red;
+}
 /* The animation code */
 @keyframes animate {
     0%, 100% {
@@ -240,6 +242,23 @@
 }
 
 
+// section surevy org carousel 
+.section-survey-org{
+    background-color: white;
+}
+.survey-org-item{
+    img{
+        height: 3rem;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+        // mix-blend-mode:color-dodge;
+    }
+    a{
+        font-size: calc(14/16) + rem;
+        text-decoration: none;
+    }
+}
+
 
 .section-forms{
     &:before{
@@ -332,123 +351,24 @@
     }
 }
 
-/* Section Timeline Start*/
-.section-timeline{
-    min-height: 90vh;
-    background-image: url('../img/img-circle-2.svg');
-    background-repeat: no-repeat;
-    background-position: left center;
-}
-
-.pds-path{
-    overflow: hidden;
-}
-
-.path-item{
+.section-testimony{
     position: relative;
-    width: 50%;
-    &::before,
     &::after{
         display: block;
-        content: '';
-    }
-
-    &::before{
-        width: 24px;
-        height: 24px;
-        border-radius: 12px;
-        border: solid 4px var(--border-default);
-        background-color: #fff;
-        transition: 1s background-color;
-    }
-
-    &::after{
-        width: 4px;
-        height: calc(100% - 16px);
-        background: var(--border-default);
         position: absolute;
-        z-index: 1;
-        top:36px;
-    }
-
-    &:nth-child(odd){
-        transform: translate(100%);
-        padding: 1rem 1rem 1rem 2rem;
-        &::before{
-            position: absolute;
-            left: -12px;
-        }
-        &::after{
-            left: -2px;
-        }
-    }
-
-    &:nth-child(even){
-        padding: 1rem 2rem 1rem 1rem;
-        text-align: right;
-        &::before{
-            position: absolute;
-            right: -12px;
-        }
-
-        &::after{
-            right: -2px;
-        }
-    }
-
-    &:hover {
-        cursor: pointer;
-        &::before{
-            background: var(--primary);;
-            transition: 1s background-color;
-        }
-    }
-
-
-}
-
-.path-item,
-.path-end{
-    p{
-        color: var(--text-secondary);
-    }
-    img{
-        max-width: 100%;
-        width: calc(20rem + 1.5vw)
-    }
-}
-.path-end{
-    position: relative;
-    &::before{
-        display: block;
-        content: '';
-        width: 24px;
-        height: 24px;
-        border-radius: 12px;
-        border: solid 4px var(--border-default);
-        top: 0;
+        z-index: 0;
+        bottom: 0;
         left: 0;
-        transform: translateY(-4px);
-    }
-
-    &:hover {
-        cursor: pointer;
-        &::before{
-            background: var(--primary);;
-            transition: 1s background-color;
-        }
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, rgba(8, 61, 98, .4) 5%, rgba(8, 61, 98, 0) 100%);
     }
 }
+
 
 @media (min-width:576px) {
-    .path-end{
-        &::before{
-            left: 0;
-            right: 0;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
+
 }
 
 /* Section Timeline End*/
@@ -667,9 +587,9 @@
 }
 
 .testimony-card{
-    background-color: white;
-    border-radius: 1rem;
-    margin: .5rem .75rem;
+    // background-color: white;
+    // border-radius: 1rem;
+    // margin: .5rem .75rem;
     // opacity: .8;
     // &:hover{
     //   opacity: 1;
@@ -715,7 +635,10 @@
     font-size: calc(14/16)+rem;
   }
   
-  
+  .text-orange{
+    color: var(--secondary);
+  }
+
 
 
 #mc_embed_signup input.mce_inline_error {

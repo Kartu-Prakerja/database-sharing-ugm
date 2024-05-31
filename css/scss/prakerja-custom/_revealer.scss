@@ -374,6 +374,7 @@ p.content__title__inner{
 	top: 50%;
 	left: 50%;
 	transform: translate3d(-50%,-50%,0);
+	z-index: 889;
 }
 
 .reveal-modal--open {
@@ -384,7 +385,7 @@ p.content__title__inner{
 	padding: 2rem;
 	color: #fff;
 	background-color: white;
-	border-radius: 1rem;
+	// border-radius: 1rem;
 }
 
 .reveal-modal__title {
@@ -402,6 +403,7 @@ p.content__title__inner{
 	opacity: 0;
 	pointer-events: none;
 	transition: opacity 0.4s;
+	z-index: 888;
 }
 
 .reveal-modal--open + .reveal-overlay {
