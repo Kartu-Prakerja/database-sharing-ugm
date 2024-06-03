@@ -41,22 +41,19 @@ header.pdt-header
         li.nav-item.md-hide
           a.nav-link(href=baseURL+'index.html' class={"nav-link-active" : pageActive === ''}) Beranda
         li.nav-item.md-hide
-          a.nav-link(href=baseURL+'pelatihan/index.html'  class={"nav-link-active" : pageActive === 'pelatihan'}) Database
+          a.nav-link(href=baseURL+'database/'  class={"nav-link-active" : pageActive === 'database'}) Database
         li.nav-item.md-hide
-          a.nav-link(href=baseURL+'tanyajawab/index.html' class={"nav-link-active" : pageActive === 'tanyajawab'}) Tanya Jawab
+          a.nav-link(href=baseURL+'tanyajawab/' class={"nav-link-active" : pageActive === 'tanyajawab'}) Tanya Jawab
         li.nav-item.md-hide
-          a.nav-link(href=baseURL+'tanyajawab/index.html' class={"nav-link-active" : pageActive === 'tanyajawab'}) Publikasi
+          a.nav-link(href=baseURL+'publikasi/' class={"nav-link-active" : pageActive === 'publikasi'}) Publikasi
         li#profile.nav-item.md-hide.supper-hidden
           .web-lang.d-flex.align-items-center
-            //- a.is-active.me-2(href="#") 2023 
-            
-              //- span.ms-1
-                img(src=baseURL+'img/flag-id.webp' alt='')
+
             // <span class="separator">|</span>
             a.d-flex.align-items-center.ms-1(href='/en')
               | ID 
               span.ms-1
-                img(src='img/flag-id.webp' alt='')
+                img(src=baseURL+'img/flag-id.webp' alt='')
           ul
             li
               a(href="/profil/index.html") Indonesia

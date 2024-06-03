@@ -433,7 +433,7 @@ ul.navbar-custom li {
     padding: 0;
     right: 0;
     display: none;
-    top: 40px;
+    top: 34px;
     border-radius: 0.5rem;
     overflow: hidden;
     background: rgb(255, 255, 255);
@@ -578,7 +578,7 @@ ul.navbar-custom li {
 }
 
 /* Page Loader */
-.js .loading::before {
+.loading::before {
   content: "";
   position: fixed;
   z-index: 100;
@@ -590,10 +590,11 @@ ul.navbar-custom li {
   width: 100%;
   height: 100%;
   text-align: center;
-  background: #7f40f1;
+  background: #083D62;
+  z-index: 1000;
 }
 
-.js .loading::after {
+.loading::after {
   content: "";
   position: fixed;
   z-index: 10000;
@@ -601,9 +602,10 @@ ul.navbar-custom li {
   left: 50%;
   width: 50px;
   height: 50px;
+  border-radius: 25px;
   margin: -25px 0 0 -25px;
   pointer-events: none;
-  background: #fff;
+  background: #FF6F00;
   -webkit-animation: loaderAnim 0.8s ease-out infinite alternate forwards;
           animation: loaderAnim 0.8s ease-out infinite alternate forwards;
 }
