@@ -46,6 +46,10 @@ $(document).ready(function(){
                 items:3,
                 margin: 0
             },
+            756:{
+                items:2,
+                margin: 0
+            },
             0:{
                 items:1,
                 margin: 0
@@ -62,15 +66,15 @@ $(document).ready(function(){
         lazyLoad:true,
         responsive:{
             1000:{
-                items:4.5,
+                items:5,
                 margin: 16
             },
             756:{
-                items:3.5,
+                items:3,
                 margin: 12
             },
             0:{
-                items:2.5,
+                items:2,
                 margin: 8
             }
         }

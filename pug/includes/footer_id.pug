@@ -1,22 +1,35 @@
 footer.section-footer
   .top-wrapper
-    .container.pt-4.pt-md-5.px-4.px-md-0
+    .container.pt-4.pt-md-5.px-4.px-md-0.py-4
       .row
-        .col-8 
-          img(loading='lazy' src=baseURL+'img/logo-prakerja-x-febugm.png' alt='Logo Prakerja x FEB UGM' height="32")
-        .col-4 
+        .col-12.col-lg-9 
+          img.mb-4(loading='lazy' src=baseURL+'img/logo-prakerja-x-febugm.png' alt='Logo Prakerja x FEB UGM' height="32")
+          p Jln. Sosio Humaniora No.1, Bulaksumur, Yogyakarta, Indonesia 55281
+        .col-12.col-lg-3 
+          .contact-center-wrapper.rounded-3.p-3 
+            h6 Layanan Contact Center
+            a.d-flex(href="#")
+              i.bi.bi-envelope-at 
+              span.ms-2 email@prakerja.go.id
+            a.d-flex(href="#")
+              i.bi.bi-telephone
+              span.ms-2 +62 727 112
 
   .bottom-wrapper
-    nav 
-      ul.d-flex 
-        li
-          a(href="#") Beranda
+    .container.py-4.px-4
+      .d-lg-flex.justify-content-lg-between.align-items-lg-center
+        nav.footer-menu 
+          ul.d-flex.gap-3
+            li
+              a(href="#") Beranda
 
-        li
-          a(href="#") Database
+            li
+              a(href="#") Database
 
-        li
-          a(href="#") Tanya Jawab
+            li
+              a(href="#") Tanya Jawab
 
-        li
-          a(href="#") Publikasi
+            li
+              a(href="#") Publikasi
+        .copyrights 
+          p &copy; Prakerja 2024

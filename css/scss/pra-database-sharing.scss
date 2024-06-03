@@ -1,5 +1,5 @@
 @import "prakerja-custom/pds-style";
-@import "prakerja-custom/pdt-header";
+@import "prakerja-custom/header";
 @import "prakerja-custom/revealer";
 @import "prakerja-custom/button";
 
@@ -256,6 +256,8 @@
     a{
         font-size: calc(14/16) + rem;
         text-decoration: none;
+        line-height: 110%;
+        color: var(--primary);
     }
 }
 
@@ -338,6 +340,14 @@
 }
 /* Section Statistic End*/
 
+/* Section Introduction */
+.section-introduction{
+    background-image: url('../img/img-map-indonesia.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
 /* section insight */
 .cards-shadow {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -366,186 +376,20 @@
     }
 }
 
+/*Section CTA*/
+.cta-wrapper{
+    background-color: var(--b500);
+    background: url('../img/img-pattern-cta.svg') no-repeat right bottom, linear-gradient(90deg, #1D508B 0%, #225A9C 14.29%, #2765AD 28.57%, #2C6FBE 42.86%, #327ACE 57.14%, #4585D1 71.43%, #5890D4 85.71%, #6A9CD8 100%);
+    color: var(-b50);
+    h4, p{
+        color: var(--b50);
+    }
+}
 
 @media (min-width:576px) {
 
 }
 
-/* Section Timeline End*/
-
-.section-forms{
-    position: relative;
-    background-color: var(--b100);
-    /* Gradient/b100 - o100 */
-// background: linear-gradient(90deg, #EAF1F9 0%, #EEF0FA 14.29%, #F3EFF9 28.57%, #F8EEF7 42.86%, #FDEDF3 57.14%, #FFEDEE 71.43%, #FFEEE9 85.71%, #FEEFE5 100%);
-}
-
-.section-forms > div{
-    position: relative;
-    z-index: 4;
-}
-
-.box-forms{
-    background-color: var(--white);
-    /* Card/Larger Shadow */
-    box-shadow: 0px 0px 0px 1px rgba(214, 219, 224, 0.2), 0px 16px 32px -8px rgba(1, 24, 48, 0.1);
-    border-radius: 2rem;
-    padding: 32px;
-}
-
-.star{
-    width: 48px;
-    height: 48px;
-    background-image: url('../img/img-star.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    z-index: -1;
-}
-
-.star-1{
-    left:5%;
-    top:5%;
-}
-.star-2{
-    right:5%;
-    bottom:15%;
-}
-
-.star-3{
-    right:0%;
-    top:0%;
-}
-
-.star-4{
-    left:0%;
-    bottom:10%;
-}
-
-.section-footer{
-    background-color: $ugm-blue;
-}
-
-.section-footer .top-wrapper{
-    border-top:solid 1px var(--border-default);
-}
-
-.list-footer-menu{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-.list-footer-menu li{
-    padding: .375rem 0;
-}
-.list-footer-menu a,
-.list-footer-menu p{
-    text-decoration: none;
-    color: var(--text-secondary);
-}
-
-.list-footer-menu a:hover{
-    color: var(--text-link);
-}
-
-@media (min-width:992px) {
-    .list-footer-menu li{
-        padding: 1rem 0;
-    }
-}
-
-.call-center-box{
-    background-color: var(--bg-default);
-    border-radius: 1rem;
-    background-image: url('../img/img-street-lamps.svg');
-    background-repeat: no-repeat;
-    background-position: bottom right;
-}
-
-.call-center-box .list-footer-menu li{
-    padding: .5rem 0;
-}
-
-.quote-box{
-    background-color: var(--b100);
-}
-.quote-box .bi{
-    font-size: 2rem;
-    color: var(--primary);
-}
-
-.quote-author{
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: var(--text-default);
-    font-size: 0.75rem;
-    position: relative;
-    padding-top: 1rem;
-}
-.quote-author::before{
-    display: block;
-    content: '';
-    width: 50px;
-    height: 2px;
-    background-color: var(--primary);
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.social-media{
-    a{
-        font-size: 1.5rem;
-        color: var(--text-secondary);
-        margin-right: 2rem;
-        padding: 0 .5rem;
-        
-        &:last-child{
-            margin-right: 0;
-        }
-    }
-    
-}
-
-.social-media a:hover{
-    color: var(--text-link);
-}
-
-.book-frame{
-    padding-left:1rem;
-    position: relative;
-    aspect-ratio: 9/5.6;
-    overflow: hidden;
-    border-radius: .5rem;
-    box-shadow: 0px 0px 0px 1px rgba(214, 219, 224, 0.2), 0px 8px 16px -4px rgba(1, 24, 48, 0.1);
-    img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;  
-        object-position: center center;
-    }
-    &::before{
-        display: block;
-        content: '';
-        width: 1rem;
-        height: 100%;
-        background-color: var(--b700);
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-}
-
-.copyrights{
-    font-size: 0.875rem;
-    color: var(--text-secondary);
-}
-
-// temporary forced color
-.nav-link.active{
-    // background-color: #2A72C7 !important;
-}
 
   .text-bg-warning{
     color: var(--text-default)!important;
@@ -652,6 +496,14 @@
     font-weight: 400!important;
 }
 
+
+.rcp-column-1{
+    column-count: 1;
+}
+
+
+@import "prakerja-custom/footer";
+
 /* media query */
 
 // Extra small devices (portrait phones, less than 576px)
@@ -730,11 +582,17 @@
         background-position: center center;
         background-size: cover;
     }
+    .rcp-column-1{
+        column-count: 2;
+    }
  }
 
  @media (min-width: 1200px) { 
     .text-clip-img{
         font-size: 4.5rem;
+    }
+    .rcp-column-1{
+        column-count: 3;
     }
  }
 
