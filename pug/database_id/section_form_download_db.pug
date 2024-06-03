@@ -1,0 +1,63 @@
+section#GetDatabase.d-flex.align-items-center.mb-5
+    .container.py-5.px-4.px-md-0
+        .row.justify-content-center
+            .col-lg-8
+                h3 
+                    | Dapatkan 
+                    span.text-gradient-hero Database 
+                    | Publik Prakerja
+
+                .mb-3
+                    label.form-label(for='fullName') Nama Lengkap
+                    input#fullName.form-control(type='text' placeholder='')
+
+                .mb-3
+                    label.form-label(for='emailAddress') Alamat Email
+                    input#emailAddress.form-control(type='email' placeholder='name@example.com')
+
+                .row.mb-3
+                    .col-lg-6.mb-3.mb-lg-0 
+                        label.form-label Kategori Penggunaan Data
+                        select.form-select(aria-label='Default select example')
+                            option(selected='') Pilih
+                            option(value='1') Skripsi
+                            option(value='2') Tesis
+                            option(value='3') Disertasi
+                            option(value='4') Tugas Kuliah
+                            option(value='5') Artikel Jurnal
+                            option(value='6') Penelitian Lainnya
+
+                    .col-lg-6 
+                        label.form-label Kategori Institusi
+                        select.form-select(aria-label='Default select example')
+                            option(selected='') Pilih
+                            option(value='7') Institusi Pendidikan
+                            option(value='8') Institusi ⁠Pemerintah
+                            option(value='9') Lembaga Penelitian
+                            option(value='10') Swasta
+                            option(value='11') Non-profit/NGO
+                            option(value='11') Lainnya
+                .mb-3
+                    label.form-label(for='fullName') Nama Institusi
+                    input#fullName.form-control(type='text' placeholder='')
+
+                .mb-3
+                    label.form-label(for='ThePurpose') Tujuan Topik Penelitian
+                    textarea#ThePurpose.form-control(rows='3')
+
+                .tnc-wrapper.border.rounded.p-4 
+                    h5 Syarat dan Ketentuan Pengunduhan Database
+                    p Terima kasih atas minat Anda terhadap Database Publik Prakerja. Sebelum Anda mengakses Database Publik Prakerja, hanya menyetujui seluruh ketentuan dibawah ini:
+                    ul 
+                        li Anda harus mendaftar dan mengisi informasi pada formulir pengunduhan database dengan benar dan jujur. 
+                        li Anda setuju untuk tidak mencoba menentukan identitas individu dan lembaga dari dataset ini, kecuali berkaitan dengan kode anonim yang telah disediakan dalam Database Publik Prakerja. Anda perlu menggunakan data sesuai dengan term and condition yang berlaku, termasuk menghormati anonimitas semua responden data. 
+                        li Anda perlu menjaga kerahasiaan dan keamanan dataset ini dengan tidak menyebarkan database publik Prakerja yang telah Anda download. Jika Anda bekerja bersama orang lain menggunakan data ini, Anda akan menganjurkan untuk mendaftar atau mendaftarkannya sendiri.
+                        li Anda setuju untuk mengirimkan kutipan dari setiap makalah, artikel, buku, atau publikasi lainnya yang menggunakan Database Publik Prakerja kepada kami melalui email xxxx.xxx@xxx.com , termasuk URL dari publikasi tersebut. 
+                        li Dalam semua laporan dan publikasi yang didasarkan pada Database Publik Prakerja, Anda wajib mengakui Database Publik Prakerja sebagai sumber data. Kutipan yang tepat dapat ditemukan di halaman pengunduhan Database Publik Prakerja. 
+                    .form-check
+                        input#userConsent.form-check-input(type='checkbox' value='')
+                        label.form-check-label(for='userConsent')
+                            | Saya setuju dengan Syarat dan Ketentuan Unduh Data diatas
+
+                div.mt-3 
+                    button.btn.btn-orange(type="submit" disabled=true) Kirim Permintaan 

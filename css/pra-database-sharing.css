@@ -1841,11 +1841,16 @@ p.content__title__inner {
 
 /* Section Statistic End*/
 /* Section Introduction */
-.section-introduction {
+.section-introduction.map-indonesia {
   background-image: url("../img/img-map-indonesia.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
+}
+
+.testus {
+  background-color: yellow;
+  position: sticky !important;
 }
 
 /* section insight */
@@ -1895,6 +1900,20 @@ p.content__title__inner {
 }
 .cta-wrapper h4, .cta-wrapper p {
   color: var(--b50);
+}
+
+.page-hero {
+  padding-top: 64px;
+}
+
+.section-about-database {
+  background-color: var(--b100);
+}
+
+.ornament-1 {
+  display: block;
+  width: 100px;
+  height: 100px;
 }
 
 .text-bg-warning {
