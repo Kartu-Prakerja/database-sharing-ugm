@@ -79,6 +79,31 @@ $(document).ready(function(){
             }
         }
     });
+
+    $('.timeline-carousel').owlCarousel({
+        loop:true,
+        // margin:24,
+        autoplay: false,
+        center: false,
+        dots: false,
+        lazyLoad:true,
+        nav: true,
+        // autoWidth:true,
+        responsive:{
+            1000:{
+                items:5,
+                margin: 0
+            },
+            756:{
+                items:3,
+                margin: 0
+            },
+            0:{
+                items:2,
+                margin: 0
+            }
+        }
+    });
     
 
 });

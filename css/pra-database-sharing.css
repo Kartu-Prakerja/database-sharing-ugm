@@ -1848,9 +1848,10 @@ p.content__title__inner {
   background-size: contain;
 }
 
-.testus {
-  background-color: yellow;
-  position: sticky !important;
+.scrollspy-example {
+  position: relative;
+  height: calc(100vh - 64px);
+  overflow: auto;
 }
 
 /* section insight */
@@ -1908,6 +1909,112 @@ p.content__title__inner {
 
 .section-about-database {
   background-color: var(--b100);
+}
+
+/*Section Publikasi*/
+.timeline-carousel .owl-stage-outer .owl-stage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.timeline-carousel .owl-stage-outer .owl-stage .owl-item {
+  height: 500px;
+  display: block;
+}
+.timeline-carousel .owl-stage-outer .owl-stage .owl-item .timeline-item::before {
+  width: 100%;
+  height: 2px;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--b500);
+}
+.timeline-carousel .owl-stage-outer .owl-stage .owl-item .timeline-item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 28px;
+  border-radius: 1rem;
+  background-color: var(--b500);
+}
+.timeline-carousel .owl-stage-outer .owl-stage .owl-item:nth-child(odd) {
+  height: 250px;
+}
+.timeline-carousel .owl-stage-outer .owl-stage .owl-item:nth-child(odd) .timeline-item::after {
+  bottom: -7px;
+}
+.timeline-carousel .owl-stage-outer .owl-stage .owl-item:nth-child(odd) .timeline-item .timeline-inner::before {
+  top: 0;
+}
+.timeline-carousel .owl-stage-outer .owl-stage .owl-item:nth-child(even) {
+  height: 250px;
+  margin-top: 250px;
+}
+.timeline-carousel .owl-stage-outer .owl-stage .owl-item:nth-child(even) .timeline-item::before {
+  top: -2px;
+  background-color: var(--b500);
+}
+.timeline-carousel .owl-stage-outer .owl-stage .owl-item:nth-child(even) .timeline-item::after {
+  top: -9px;
+}
+.timeline-carousel .owl-stage-outer .owl-stage .owl-item:nth-child(even) .timeline-inner {
+  padding: 40px 0.5rem 0.5rem 48px;
+}
+.timeline-carousel .owl-stage-outer .owl-stage .owl-item:nth-child(even) .timeline-date {
+  top: 12px;
+}
+.timeline-carousel .owl-stage-outer .owl-stage .owl-item:nth-child(even) .timeline-card-wrapper {
+  position: absolute;
+  bottom: 0;
+}
+.timeline-carousel .owl-stage-outer .owl-stage .owl-item .timeline-inner {
+  height: 100%;
+  width: 150%;
+  display: block;
+  position: absolute;
+  padding: 0.5rem 0.5rem 0.5rem 48px;
+}
+.timeline-carousel .owl-stage-outer .owl-stage .owl-item .timeline-inner::before {
+  width: 2px;
+  height: calc(100% - 40px);
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 36px;
+  background-color: var(--border-default);
+}
+.timeline-carousel .owl-stage-outer .owl-stage .owl-item .timeline-date {
+  font-size: 0.75rem;
+  font-weight: bold;
+  line-height: 110%;
+  position: absolute;
+  width: 72px;
+  left: 0;
+  bottom: 12px;
+  text-align: center;
+  display: inline-block;
+}
+.timeline-carousel .owl-stage-outer .owl-stage .owl-item .timeline-card {
+  display: block;
+  border: solid 1px transparent;
+}
+.timeline-carousel .owl-stage-outer .owl-stage .owl-item .timeline-card img {
+  width: 64px;
+  height: 64px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.timeline-carousel .owl-stage-outer .owl-stage .owl-item .timeline-card p {
+  font-weight: bold;
+}
+.timeline-carousel .owl-stage-outer .owl-stage .owl-item .timeline-card:hover {
+  border: solid 1px var(--border-default);
+  cursor: pointer;
 }
 
 .ornament-1 {

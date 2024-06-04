@@ -11,15 +11,17 @@ html(lang="id" page-class="home")
     include ../pug/includes/html_head.pug
     body
         include ../pug/includes/analytics_no_script.pug
-        include ../pug/includes/header_id.pug
+        include ../pug/includes/id/header.pug
 
         main
 
-            //- include ../pug/main_id/section_about_prakerja.pug
+            include ../pug/publikasi/id/section_jumbotron.pug
+            include ../pug/publikasi/id/section_timeline.pug
+            include ../pug/publikasi/id/section_publication.pug
             
 
 
-        include ../pug/includes/footer_id.pug
+        include ../pug/includes/id/footer.pug
     include ../pug/includes/html_foot.pug
-    script(src="../js/reveal_home.js")
+
     

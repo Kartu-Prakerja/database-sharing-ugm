@@ -11,20 +11,25 @@ html(lang="id" page-class="home")
     include pug/includes/html_head.pug
     body.loading
         include pug/includes/analytics_no_script.pug
-        include pug/includes/header_id.pug
+        include pug/includes/id/header.pug
 
         main
-            include pug/main_id/section_hero.pug
-            include pug/main_id/section_about_prakerja.pug
-            include pug/main_id/section_statistic.pug
-            include pug/main_id/section_survey_org.pug
-            include pug/main_id/section_introduction.pug
-            include pug/includes/section_cta_id.pug
-            include pug/main_id/section_testimony.pug
-            include pug/includes/modal.pug
+            include pug/main/id/section_hero.pug
+            include pug/main/id/section_about_prakerja.pug
+            include pug/main/id/section_statistic.pug
+            include pug/main/id/section_survey_org.pug
+            include pug/main/id/section_introduction.pug
+            include pug/includes/id/section_cta.pug
+            include pug/main/id/section_testimony.pug
+            include pug/includes/id/modal.pug
 
 
-        include pug/includes/footer_id.pug
+        include pug/includes/id/footer.pug
     include pug/includes/html_foot.pug
+    //- Animation scripts 
+    script(src="/js/anime.min.js")
+    script(src="/js/scrollMonitor.js")
+    script(src="/js/main.js")
     script(src="/js/reveal_home.js")
+
     

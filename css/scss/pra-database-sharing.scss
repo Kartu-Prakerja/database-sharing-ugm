@@ -350,9 +350,10 @@
     }
 }
 
-.testus{
-    background-color: yellow;
-    position: sticky!important;
+.scrollspy-example {
+    position: relative;
+    height: calc(100vh - 64px);
+    overflow: auto;
 }
 
 /* section insight */
@@ -401,6 +402,140 @@
 .section-about-database{
     background-color: var(--b100);
 }
+
+/*Section Publikasi*/
+.timeline-carousel{
+    // outline: solid 1px blue;
+    .owl-stage-outer{
+        .owl-stage{
+            display: flex;
+                .owl-item{
+                    // outline: solid 1px red;
+                    // margin: .5rem 0;
+                    height: 500px;
+                    display: block;
+                    .timeline-item{
+                        &::before{
+                            width: 100%;
+                            height: 2px;
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            background-color: var(--b500);
+                        }
+                        &:after{
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            width:16px;
+                            height: 16px;
+                            left: 28px;
+                            border-radius: 1rem;
+                            background-color: var(--b500);
+                        }
+                        
+                    }
+
+                    &:nth-child(odd){
+                        height: 250px;
+                        // background-color: yellow;
+                        .timeline-item{
+                            &::after{
+                                bottom: -7px;
+                            }
+                            .timeline-inner{
+                                &::before{
+                                    top:0;
+                                }
+                            }
+                        }
+                        
+                    }
+                    &:nth-child(even){
+                        height: 250px;
+                        margin-top: 250px;
+                        .timeline-item{
+                            &::before{
+                                top: -2px;
+                                background-color: var(--b500);
+                            }
+                            &::after{
+                                top: -9px;
+                            }
+                        }
+                        .timeline-inner{
+                            padding: 40px .5rem .5rem 48px;
+                        }
+                        .timeline-date{
+                            top: 12px;
+                        }
+                        .timeline-card-wrapper{
+                            position: absolute;
+                            bottom: 0;
+                        }
+                    }
+                    .timeline-inner{
+                        // background-color: pink;
+                        // outline: solid 1px red;
+                        height: 100%;
+                        width: 150%;
+                        display: block;
+                        // flex-direction: row;
+                        position: absolute;
+                        padding: .5rem .5rem .5rem 48px;
+                        &::before{
+                            width: 2px;
+                            height: calc(100% - 40px);
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            bottom: 0;
+                            left: 36px;
+                            background-color: var(--border-default);
+                        }
+                    }
+
+                    .timeline-date{
+                        font-size: calc(12/16) + rem;
+                        font-weight: bold;
+                        line-height: 110%;
+                        position: absolute;
+                        width: 72px;
+                        left: 0;
+                        bottom: 12px;
+                        text-align: center;
+                        display: inline-block;
+                    }
+                    
+                    .timeline-card{
+                        // border: solid 1px red;
+                        
+                        display: block;
+                        border: solid 1px transparent;
+                        img{
+                            width: 64px;
+                            height: 64px;
+                            object-fit: contain;
+                        }
+                        p{
+                            font-weight: bold;
+                            // outline: solid 1px red;
+                            // margin: 0;
+                            // padding: 0;
+                        }
+                        &:hover{
+                            border: solid 1px var(--border-default);
+                            cursor: pointer;
+                        }
+                    }
+                    
+                }
+        }
+      }
+}
+
 
 .ornament-1{
     display: block;
