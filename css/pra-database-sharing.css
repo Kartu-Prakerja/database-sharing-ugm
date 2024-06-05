@@ -1962,7 +1962,7 @@ p.content__title__inner {
   top: -9px;
 }
 .timeline-carousel .owl-stage-outer .owl-stage .owl-item:nth-child(even) .timeline-inner {
-  padding: 40px 0.5rem 0.5rem 48px;
+  padding: 40px 0.5rem 0px 48px;
 }
 .timeline-carousel .owl-stage-outer .owl-stage .owl-item:nth-child(even) .timeline-date {
   top: 12px;
@@ -1976,7 +1976,7 @@ p.content__title__inner {
   width: 150%;
   display: block;
   position: absolute;
-  padding: 0.5rem 0.5rem 0.5rem 48px;
+  padding: 0 0.5rem 0.5rem 48px;
 }
 .timeline-carousel .owl-stage-outer .owl-stage .owl-item .timeline-inner::before {
   width: 2px;
