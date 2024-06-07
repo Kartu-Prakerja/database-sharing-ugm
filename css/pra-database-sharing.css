@@ -1973,7 +1973,7 @@ p.content__title__inner {
 }
 .timeline-carousel .owl-stage-outer .owl-stage .owl-item .timeline-inner {
   height: 100%;
-  width: 150%;
+  width: 175%;
   display: block;
   position: absolute;
   padding: 0 0.5rem 0.5rem 48px;
@@ -2023,6 +2023,20 @@ p.content__title__inner {
 
 .section-bg-t100 {
   background-color: var(--t100);
+}
+
+.circle-stat {
+  width: 56px;
+  height: 56px;
+  margin: 0;
+  padding: 0;
+  background-color: var(--o100);
+  text-align: center;
+  border-radius: 30px;
+}
+.circle-stat h5 {
+  color: var(--primary);
+  margin-top: 8px;
 }
 
 .ornament-1 {

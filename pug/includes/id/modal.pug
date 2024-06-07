@@ -1,10 +1,81 @@
-.reveal-modal
-  .reveal-modal__inner
-    .d-flex.justify-content-between.align-items-center.mb-3
-      h4.m-0.p-0 Tentang Prakerja
-      div
-        button.btn.btn-sm.btn-ghost-light.btn--default.btn--reveal-modal-close
-          i.bi.bi-x-lg
-    .video-embed
-        iframe.video-youtube-embed( src='https://www.youtube.com/embed/gMsbWnyrqKY?si=Ymz8R9rQ59nmv7ti' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen='')
-.reveal-overlay
+
+<!-- Modal 1  -->
+#TimelineDetail1.modal.fade(tabindex='-1' aria-labelledby='TimelineDetail1' aria-hidden='true')
+  .modal-dialog.modal-dialog-centered.pds-modal
+    .modal-content
+      .modal-header.modal-header-custom.p-4.align-items-start.position-relative.border-0.pb-0
+        .d-flex
+          img.me-3.w-25.border.p-3.rounded(src=baseURL+"img/ls-logo-TNP2K.webp", alt="")
+          div 
+            h6 J-Pal
+            h5 Evaluasi Dampak  Kartu Prakerja
+        button.btn-close.position-absolute(type='button' data-bs-dismiss='modal' aria-label='Close' style="right:1.5rem;")
+      .modal-body.px-4
+        section.border.p-3.rounded
+          table.table.table-borderless
+            tbody 
+              tr 
+                td Waktu Survei	
+                td : 
+                td 19 Juni - 21 Oktober 2021
+
+              tr 
+                td Karakteristik
+                td : 
+                td Penerima dan Non-Penerima Gelombang 7-17
+
+              tr 
+                td Metode
+                td : 
+                td Randomized Controlled Trial (RCT)
+
+              tr 
+                td Jumlah Sampel
+                td : 
+                td 47.750  responden
+
+        section.my-4
+          .d-flex.align-items-center.gap-3.mb-3
+            .circle-stat.d-flex.align-items-center.justify-content-center
+              h5 18%
+            span Menambah peluang mendapatkan pekerjaan baru
+          
+          .d-flex.align-items-center.gap-3.mb-3 
+            .circle-stat.d-flex.align-items-center.justify-content-center
+              h5 30%
+            span Meningkatkan peluang memiliki usaha
+
+          .d-flex.align-items-center.gap-3.mb-3 
+            .circle-stat.d-flex.align-items-center.justify-content-center
+              h5 10%
+            span Rata-rata kenaikan pendapatan per bulan (Rp122.500)
+
+        section.mb-4
+          h5 Unduh laporan 
+          .d-flex.gap-3 
+            a.btn.btn-outline-orange(href="#")
+              i.bi.bi-cloud-download-fill.me-2 
+              | Indonesia 
+
+            a.btn.btn-outline-orange(href="#")
+              i.bi.bi-cloud-download-fill.me-2 
+              | Inggris 
+
+        section
+          h5 Nonton 
+          div 
+            a.btn.btn-outline-orange(href="#")
+              i.bi.bi-play-circle-fill.me-2 
+              | Diseminasi 
+
+
+
+
+      //- .modal-footer.ps-4.pb-4.pe-4
+      //-   .row.p-0.w-100
+      //-     .col-12.col-md-6.ps-0.pe-0.pe-lg-2
+      //-       button#btn-logout.btn.btn-ghost-danger.w-100.mb-3.mb-lg-0(data-bs-toggle="modal" data-bs-dismiss='modal')
+      //-         | Ya
+      //-     .col-12.col-md-6.ps-0.pe-0.ps-lg-2
+      //-       button.btn.btn-primary.w-100(data-bs-toggle="modal" data-bs-dismiss='modal')
+      //-         | Batal

@@ -1,9 +1,9 @@
-//- INDEX Publikasi Page
+//- INDEX Database Page
 //- start variable
-- var pageActive = 'publikasi'
+- var pageActive = ''
 - var baseURL = '../'
 - var contentDescription = {}
-- contentDescription.title = "Prakerja x FEB UGM Publikasi"
+- contentDescription.title = "Download Databse Prakerja x FEB UGM Database"
 - contentDescription.description = "Database Publik"
 
 doctype html
@@ -15,15 +15,11 @@ html(lang="id" page-class="home")
 
         main
 
-            include ../pug/publikasi/id/section_jumbotron.pug
-            include ../pug/publikasi/id/section_timeline.pug
-            include ../pug/publikasi/id/section_publication.pug
-            include ../pug/includes/id/section_cta.pug
-            include ../pug/includes/id/modal.pug
+            include ../pug/database/id/section_jumbotron_download_db.pug
+            include ../pug/database/id/section_content_download_db.pug 
+            include ../pug/database/id/section_table_download_db.pug
             
-
 
         include ../pug/includes/id/footer.pug
     include ../pug/includes/html_foot.pug
-
     

@@ -481,7 +481,7 @@
                         // background-color: pink;
                         // outline: solid 1px red;
                         height: 100%;
-                        width: 150%;
+                        width: 175%;
                         display: block;
                         // flex-direction: row;
                         position: absolute;
@@ -543,6 +543,23 @@
 
 .section-bg-t100{
     background-color: var(--t100);
+}
+
+.circle-stat{
+    width: 56px;
+    height: 56px;
+    margin:0;
+    padding:0;
+    background-color: var(--o100); 
+    text-align: center;
+    border-radius: 30px;
+    h5{
+        color: var(--primary);
+        // line-height: 20px;
+        margin-top: 8px;
+        // outline: solid 1px red;
+        
+    }
 }
 
 .ornament-1{
