@@ -1,15 +1,14 @@
-//- INDEX Database Page
-//- start variable
-- var pageActive = ''
+
+- var pageActive = 'download'
 - var baseURL = '../'
 - var contentDescription = {}
-- contentDescription.title = "Download Databse Prakerja x FEB UGM Database"
+- contentDescription.title = "Download Database Prakerja x FEB UGM Tanya Jawab"
 - contentDescription.description = "Database Publik"
 
 doctype html
 html(lang="id" page-class="home")
     include ../pug/includes/html_head.pug
-    body
+    body(data-bs-spy="scroll" data-bs-target="#navbar-example")
         include ../pug/includes/analytics_no_script.pug
         include ../pug/includes/id/header.pug
 
@@ -20,6 +19,9 @@ html(lang="id" page-class="home")
             include ../pug/database/id/section_table_download_db.pug
             
 
+
         include ../pug/includes/id/footer.pug
     include ../pug/includes/html_foot.pug
+
+    
     

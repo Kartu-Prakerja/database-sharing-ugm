@@ -205,6 +205,7 @@ ul.navbar-custom ul li a {
   text-decoration: none;
   display: block;
   text-align: center;
+  font-size: 0.875rem;
 }
 ul.navbar-custom .nav-link {
   position: relative;
@@ -517,30 +518,6 @@ ul.navbar-custom li {
   }
   .main-logo img {
     height: 32px;
-  }
-}
-@media (max-width: 575px) {
-  .modal-search-form {
-    position: relative;
-  }
-  .modal-search-form .form-control {
-    width: 100%;
-    height: 4rem;
-    padding: 1rem 4rem 1rem 1rem;
-    font-weight: 700;
-    border: none;
-    background: var(--n100);
-    font-size: 2rem;
-    border-radius: 2rem;
-  }
-  .modal-search-form .btn {
-    width: 4rem;
-    height: 4rem;
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 2rem;
-    border-radius: 2rem;
   }
 }
 .hidden {
@@ -942,7 +919,7 @@ p.content__title__inner {
 }
 
 .reveal-modal__inner {
-  padding: 2rem;
+  padding: 1rem;
   color: #fff;
   background-color: white;
 }
@@ -1848,10 +1825,34 @@ p.content__title__inner {
   background-size: contain;
 }
 
-.scrollspy-example {
+.scrollspy-navbar {
+  position: sticky;
+  z-index: 123;
+  left: 0;
+  top: 80px;
+  border-radius: 0.5rem;
+}
+.scrollspy-navbar a {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: var(--text-default);
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+.scrollspy-navbar a:hover {
+  background-color: var(--o100);
+}
+.scrollspy-navbar a.active {
+  background-color: var(--o100);
+  color: var(--o500);
+}
+
+.adjust-anchor {
   position: relative;
-  height: calc(100vh - 64px);
-  overflow: auto;
+  padding-top: 76px;
+  margin-top: -76px;
+  overflow: hidden;
 }
 
 /* section insight */

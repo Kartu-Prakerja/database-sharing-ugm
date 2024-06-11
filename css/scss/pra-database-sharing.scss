@@ -350,11 +350,38 @@
     }
 }
 
-.scrollspy-example {
-    position: relative;
-    height: calc(100vh - 64px);
-    overflow: auto;
+
+.scrollspy-navbar{
+    position: sticky;
+    z-index: 123;
+    left:0;
+    top:80px;
+    border-radius: .5rem;
+    a{
+        display: block;
+        padding: .5rem 1rem;
+        text-decoration: none;
+        color: var(--text-default);
+        border-radius: .5rem;
+        font-weight: bold;
+        &:hover{
+            background-color: var(--o100);
+        }
+        &.active{
+            background-color: var(--o100);
+            color: var(--o500);
+        }
+    }
 }
+
+.adjust-anchor{
+    position: relative;
+    padding-top: 76px;
+    margin-top: -76px;
+    // outline: solid 1px red;
+    overflow: hidden;
+}
+
 
 /* section insight */
 .cards-shadow {
@@ -438,6 +465,8 @@
                         
                     }
 
+                    
+
                     &:nth-child(odd){
                         height: 250px;
                         // background-color: yellow;
@@ -453,6 +482,7 @@
                         }
                         
                     }
+                    
                     &:nth-child(even){
                         height: 250px;
                         margin-top: 250px;
@@ -477,6 +507,7 @@
                             
                         }
                     }
+                    
                     .timeline-inner{
                         // background-color: pink;
                         // outline: solid 1px red;
@@ -792,3 +823,4 @@
  }
 
  @import "prakerja-custom/owl.carousel";
+

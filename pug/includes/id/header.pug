@@ -46,18 +46,22 @@ header.pdt-header
           a.nav-link(href=baseURL+'tanyajawab/' class={"nav-link-active" : pageActive === 'tanyajawab'}) Tanya Jawab
         li.nav-item.md-hide
           a.nav-link(href=baseURL+'publikasi/' class={"nav-link-active" : pageActive === 'publikasi'}) Publikasi
-        li#profile.nav-item.md-hide.supper-hidden
+        li.nav-item.md-hide.supper-hidden
           .web-lang.d-flex.align-items-center
 
             // <span class="separator">|</span>
-            a.d-flex.align-items-center.ms-1(href='/en')
+            a.d-none.d-lg-flex.align-items-center.ms-1(href='#')
               | ID 
               span.ms-1
                 img(src=baseURL+'img/flag-id.webp' alt='')
           ul
             li
-              a(href="/profil/index.html") Indonesia
+              a(href="/index.html") 
+                | Indonesia
+                i.bi.bi-check-circle.ms-2.text-orange
+                
             li
-              a(href="/profil/index.html#active-course-container") 
+              a(href="/en/index.html") 
                 //- img(src='img/flag-en.webp' alt='')
                 | English
+                i.bi.bi-check-circle.ms-2.text-orange.d-none
