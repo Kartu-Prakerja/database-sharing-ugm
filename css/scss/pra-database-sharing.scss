@@ -374,13 +374,15 @@
     }
 }
 
-.adjust-anchor{
-    position: relative;
-    padding-top: 76px;
-    margin-top: -76px;
-    // outline: solid 1px red;
-    overflow: hidden;
+.nav-sticky{
+    position: sticky;
+    z-index: 123;
+    left:0;
+    top:64px;
+    background-color: white;
+    padding-top: .5rem;
 }
+
 
 
 /* section insight */
@@ -798,6 +800,13 @@
     }
     .rcp-column-1{
         column-count: 2;
+    }
+    .adjust-anchor{
+        position: relative;
+        padding-top: 76px;
+        margin-top: -76px;
+        // outline: solid 1px red;
+        overflow: hidden;
     }
  }
 

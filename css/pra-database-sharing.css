@@ -1848,11 +1848,13 @@ p.content__title__inner {
   color: var(--o500);
 }
 
-.adjust-anchor {
-  position: relative;
-  padding-top: 76px;
-  margin-top: -76px;
-  overflow: hidden;
+.nav-sticky {
+  position: sticky;
+  z-index: 123;
+  left: 0;
+  top: 64px;
+  background-color: white;
+  padding-top: 0.5rem;
 }
 
 /* section insight */
@@ -2253,6 +2255,12 @@ p.content__title__inner {
     -webkit-column-count: 2;
        -moz-column-count: 2;
             column-count: 2;
+  }
+  .adjust-anchor {
+    position: relative;
+    padding-top: 76px;
+    margin-top: -76px;
+    overflow: hidden;
   }
 }
 @media (min-width: 1200px) {
